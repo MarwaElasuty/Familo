@@ -104,164 +104,304 @@ img[alt="menu-burger"] {
     display: none;
 }
 
-label[for="department-select"] {
-    display: inherit;
-}
 
-label[for="time-select"] {
-    display: inherit;
-}
+/* nav media query */
 
-img[alt="menu"] {
-    display: none;
-}
-
-.heading {
-    width: 100%;
-    text-align: center;
-}
-
-.heading>h1 {
-    font-size: 43px;
-}
-
-/* nav and ul media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
-    img[alt="menu"] {
-        display: none;
-    }
 
     ul {
-        display: block;
-        list-style-type: none;
-        display: flex;
-        column-gap: 70px;
-    }
-}
-
-@media screen and (max-width: 992px) and (min-width:786px) {
-    img[alt="menu"] {
-        display: block;
-    }
-
-    ul {
-        display: none;
+        flex-direction: column;
     }
 
     .ul-list {
+        display: none;
         position: absolute;
-        top: 100px;
-        right: 18px;
-        background-color: white;
-        padding: 130px;
-        border-radius: 8px;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
         text-align: center;
-        border: 1px solid black;
-        color: black;
-        font-weight: 500;
-        z-index: 1;
+        border-radius: 76px;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    ul a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+
+    .ul-list li {
+        padding-bottom: 22px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
+    }
+
+    nav {
+        padding: 32px;
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+    button[name="login"] {
+        color: white;
+    }
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    .ul-list {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid white;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
     }
 
     .ul-list li {
-        padding-bottom: 15px;
-        font-size: 50px;
+        padding-bottom: 22px;
     }
 
-    #member-btn {
-        position: absolute;
-        right: 160px;
-        top: 33px;
-        font-size: 26px;
+    nav {
+        padding: 32px;
     }
 
-    #login-btn {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 26px;
+    .nav-btns {
+        display: none;
+    }
 
+    button[name="login"] {
+        color: white;
+    }
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
-    img[alt="menu"] {
-        display: block;
-    }
 
     ul {
+        flex-direction: column;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    .display {
         display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
     }
 
     .ul-list {
+        display: none;
         position: absolute;
-        top: 85px;
-        right: 10px;
-        background-color: white;
-        padding: 130px;
-        border-radius: 5px;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
         text-align: center;
-        border: 1px solid black;
-        color: black;
-        font-weight: 500;
-        z-index: 1;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
     }
 
     .ul-list li {
-        padding-bottom: 15px;
-        font-size: 25px;
+        padding-bottom: 22px;
     }
 
-    #member-btn {
-        position: absolute;
-        right: 160px;
-        top: 33px;
+    nav {
+        padding: 32px;
     }
 
-    #login-btn {
-        padding-left: 10px;
-        padding-right: 10px;
+    .nav-btns {
+        display: none;
     }
 
+    button[name="login"] {
+        color: white;
+    }
+
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    img[alt="menu"] {
-        display: block;
-    }
 
     ul {
+        flex-direction: column;
+    }
+
+    .ul-list a:hover {
+        color: white;
+    }
+
+    ul a {
+        color: white;
+    }
+
+    .display {
         display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        border-radius: 76px;
     }
 
     .ul-list {
+        display: none;
         position: absolute;
-        top: 129px;
-        right: 10px;
-        background-color: white;
-        padding: 130px;
-        border-radius: 5px;
+        top: 80px;
+        right: 20px;
+        border: 5px solid #518581;
+        padding: 58px;
+        background-color: #518581;
+        color: white;
+        font-size: 25px;
+        z-index: 2;
         text-align: center;
-        border: 1px solid black;
-        color: black;
-        font-weight: 500;
-        z-index: 1;
+        border-radius: 76px;
+    }
+
+    img[alt="menu-burger"] {
+        display: block;
     }
 
     .ul-list li {
-        padding-bottom: 15px;
-        font-size: 25px;
+        padding-bottom: 22px;
     }
 
-    #member-btn {
-        position: absolute;
-        right: 72px;
-        top: 78px;
+    nav {
+        padding: 32px;
     }
 
-    #login-btn {
-        padding-left: 10px;
-        padding-right: 10px;
+    .nav-btns {
+        display: none;
+    }
+
+    button[name="login"] {
+        color: white;
+    }
+
+    .menu-btns {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
     }
 }
+
 
 .content-btns {
     display: flex;
@@ -294,7 +434,7 @@ img[alt="menu"] {
     flex-wrap: wrap;
     position: relative;
     bottom: 52px;
-    row-gap: 15px;
+    row-gap: 28px;
 }
 
 .absolute-cards-div h2 {
@@ -331,7 +471,7 @@ img[alt="menu"] {
     }
 
     .absolute-cards-div>div {
-        width: 66%;
+        width: 85%;
         font-size: 29px;
         }
 
@@ -361,7 +501,7 @@ img[alt="menu"] {
     }
 
     .absolute-cards-div>div {
-        width: 94%;
+        width: 85%;
     }
 }
 
@@ -371,7 +511,7 @@ img[alt="menu"] {
     }
 
     .absolute-cards-div>div {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -394,7 +534,7 @@ img[alt="menu"] {
 }
 
 .offers p{
-    font-size: 21px;
+    font-size: 25px;
 }
 .offers img {
     padding-bottom: 5px;
